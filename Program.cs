@@ -11,6 +11,9 @@ builder.Services.AddDbContext<Demo1Context>(options =>
     options.UseSqlServer(connection);
 });
 
+// Thêm tích hợp Application Insights
+// builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["ApplicationInsights:InstrumentationKey"]);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,7 +30,6 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
