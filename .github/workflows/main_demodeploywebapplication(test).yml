@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'demodeploywebapplication'
           slot-name: 'Test'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_47C70599166A415AA58055298B1F0D49 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D152AB5911074C21ACF94EA1210EB224 }}
           package: .
