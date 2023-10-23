@@ -12,7 +12,7 @@ builder.Services.AddDbContext<Demo1Context>(options =>
 });
 
 // Thêm tích hợp Application Insights
-builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["ApplicationInsights:InstrumentationKey"]);
+// builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["ApplicationInsights:InstrumentationKey"]);
 
 var app = builder.Build();
 
